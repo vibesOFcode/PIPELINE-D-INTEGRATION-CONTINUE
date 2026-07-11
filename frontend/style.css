@@ -1,0 +1,109 @@
+/* Catppuccin Frappe theme inspired */
+:root {
+  --surface0: #303446;
+  --surface1: #353b45;
+  --surface2: #414559;
+  --overlay0: #565f6c;
+  --text: #cad3f5;
+  --blue: #8aadf4;
+  --green: #a6da95;
+  --yellow: #eed49f;
+  --red: #ed8796;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: var(--surface0);
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--surface1);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+input[type="file"] {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--overlay0);
+  background: var(--surface2);
+  color: var(--text);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: var(--blue);
+  color: var(--surface0);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: var(--overlay0);
+}
+
+.stats-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.table-wrapper {
+  flex: 1 1 250px;
+}
+
+.chart-wrapper {
+  flex: 2 1 400px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+th {
+  background: var(--overlay0);
+  font-weight: bold;
+}
+
+td {
+  font-weight: bold;
+}
+
+canvas {
+  max-width: 100%;
+  background: var(--surface2);
+  border-radius: 8px;
+  padding: 1rem;
+}

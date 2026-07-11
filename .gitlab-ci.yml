@@ -1,0 +1,8 @@
+image: python:3.9
+
+before_script:
+  - pip install -r backend/requirements.txt
+
+test_backend:
+  script:
+    - python -m pytest
